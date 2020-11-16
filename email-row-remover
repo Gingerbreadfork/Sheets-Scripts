@@ -1,0 +1,313 @@
+/*
+Deletes rows in the active spreadsheet that contain addresses in column B
+*/
+
+function removeGmail() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("gmail.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeYahoo() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("yahoo.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeProtonmail() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("protonmail.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeHotmail() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("hotmail.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeYandexru() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("yandex.ru") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeOutlookcom() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("outlook.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeIcloud() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("icloud.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeMailcom() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("mail.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeGmxcom() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("gmx.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeMailru() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("mail.ru") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeQQcom() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("qq.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeAOLcom() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("aol.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+function removeYandexcom() {
+ var sheet = SpreadsheetApp.getActiveSheet();
+ var rows = sheet.getDataRange();
+ var numRows = rows.getNumRows();
+ var values = rows.getValues();
+
+ var rowsDeleted = 0;
+ for (var i = 0; i <= numRows - 1; i++) {
+
+ var row = values[i];
+
+ if (row[1].indexOf("yandex.com") > -1) {
+ sheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+ rowsDeleted++;
+ }
+
+ }
+};
+
+
+/*
+Adds a custom menu to the active spreadsheet with the different options
+This function is run when the sheet is opened, if open already run this function
+*/
+function onOpen() {
+ var sheet = SpreadsheetApp.getActiveSpreadsheet();
+ var entries = [{
+ name : "Remove Gmail.com",
+ functionName : "removeGmail"
+ },
+ {
+ name : "Remove Yahoo.com",
+ functionName : "removeYahoo"
+ },
+ {
+ name : "Remove Protonmail.com",
+ functionName : "removeProtonmail"
+ },
+ {
+ name : "Remove Hotmail.com",
+ functionName : "removeHotmail"
+ },
+ {
+ name : "Remove Yandex.ru",
+ functionName : "removeYandexru"
+ },
+ {
+ name : "Remove Outlook.com",
+ functionName : "removeOutlookcom"
+ },
+ {
+ name : "Remove Icloud.com",
+ functionName : "removeIcloud"
+ },
+ {
+ name : "Remove Mail.com",
+ functionName : "removeMailcom"
+ },
+ {
+ name : "Remove Gmx.com",
+ functionName : "removeGmxcom"
+ },
+ {
+ name : "Remove Mail.ru",
+ functionName : "removeMailru"
+ },
+ {
+ name : "Remove QQ.com",
+ functionName : "removeQQcom"
+ },
+ {
+ name : "Remove AOL.com",
+ functionName : "removeAOLcom"
+ },
+ {
+ name : "Remove Yandex.com",
+ functionName : "removeYandexcom"
+ }
+               ];
+ sheet.addMenu("Email Remover", entries);
+};
